@@ -1,0 +1,67 @@
+/* Styles for mobile and large screens go here */
+body {
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.tagline {
+    font-style: oblique;
+}
+
+header {
+    background-color: aliceblue;
+    font-size: 1.7em;
+}
+
+h1 {
+    color: crimson;
+}
+
+footer {
+    background-color: rgb(255, 230, 200);
+}
+
+footer p {
+    color: crimson;
+}
+
+main,
+nav,
+footer p,
+header h1,
+header p {
+    max-width: 900px;
+    margin: auto;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 0.35rem;
+    padding: 0.35rem;
+    border: 1px solid black;
+    margin-bottom: 0.4rem;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 800px) {
+    /* Styles for only large screens go here */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+}
